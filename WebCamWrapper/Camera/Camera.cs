@@ -988,7 +988,7 @@ namespace Touchless.Vision.Camera
       private int _width = 320;
       private int _bpp = 24;
 
-      internal bool StartCapture()
+      public bool StartCapture()
       {
          bool result = false;
 
@@ -1000,7 +1000,7 @@ namespace Touchless.Vision.Camera
          return result;
       }
 
-      internal void StopCapture()
+      public void StopCapture()
       {
          lock( CameraMethodsLock )
          {
